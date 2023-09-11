@@ -6,6 +6,8 @@ from game.boss import Boss
 from game.player import Player
 from game.config import SCREEN, SCREEN_IMG, MAX_FPS, ATK_SPEED
 
+#Handles drawing the background as well as all sprites. Parameters are the 
+#sprite groups
 def draw_window(player, player_shots, boss_group, damage_indicator_group,
                 boss_minion_group, enemy_shot_group):
     SCREEN.blit(SCREEN_IMG, (0, 0))
@@ -32,7 +34,7 @@ def draw_window(player, player_shots, boss_group, damage_indicator_group,
 
     pygame.display.update()
 
-
+#Main game loop. Sprite groups are initialized here. 
 def main():
     pygame.init()
 

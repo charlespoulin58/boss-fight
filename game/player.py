@@ -6,6 +6,7 @@ from .damage_indicator import DamageIndicator
 from .health_bar import HealthBar
 
 class Player(pygame.sprite.Sprite):
+    #This class handles all of the player logic. This includes movement, shooting, and taking damage.
     def __init__(self):
         super().__init__()
         self.image = pygame.image.load(os.path.join(

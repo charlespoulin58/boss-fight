@@ -113,6 +113,9 @@ class Boss(pygame.sprite.Sprite):
             self.kill()
 
 class BossSummons(Boss):
+    '''This class handles the logic of the minnions that the boss summons. 
+    Minions charge at the player while repeatedly firing short-range and low damage shots. 
+    Charge behavior is inherited from the Boss class.'''
     def __init__(self, spawn_x, spawn_y, player):
         super().__init__(player)
         MINION_IDLE_1 = pygame.image.load(

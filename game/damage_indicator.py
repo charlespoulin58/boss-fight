@@ -1,9 +1,9 @@
 import pygame
 
 class DamageIndicator(pygame.sprite.Sprite):
-    def __init__(self, damage, x, y):
         # Collect damage done by shot, and location of target hit.
         #  Damage will float above affected sprite and last for a second
+    def __init__(self, damage, x, y):
         super().__init__()
         self.damage = damage
         self.font = pygame.font.SysFont('Arial', 30, bold=True)
